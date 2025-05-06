@@ -9,6 +9,11 @@ fi
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 
+# Load all .zsh files in the home directory except for .zsh_plugins.zsh
+find "$HOME" -maxdepth 1 -name "*.zsh" ! -name ".zsh_plugins.zsh" | while read -r file; do
+    source "$file"
+done
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -19,6 +24,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias vim="nvim"
 alias nano="nvim"
 alias vi="nvim"
+alias docker="podman"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 export ZVM_VI_EDITOR=nvim
