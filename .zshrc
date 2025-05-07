@@ -20,13 +20,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# Alias
-alias vim="nvim"
-alias nano="nvim"
-alias vi="nvim"
-alias docker="podman"
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-
 export ZVM_VI_EDITOR=nvim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
