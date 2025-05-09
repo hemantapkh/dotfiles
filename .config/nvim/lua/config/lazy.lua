@@ -18,14 +18,6 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    -- import Python extras
-    { import = "lazyvim.plugins.extras.lang.python" },
-    -- import Copilot
-    { import = "lazyvim.plugins.extras.ai.copilot" },
-    -- import Copilot Chat
-    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
-    -- import mini comment
-    { import = "lazyvim.plugins.extras.coding.mini-comment" },
     -- import/override with your plugins
     { import = "plugins" },
   },
