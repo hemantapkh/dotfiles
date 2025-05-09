@@ -24,8 +24,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.ai.copilot" },
     -- import Copilot Chat
     { import = "lazyvim.plugins.extras.ai.copilot-chat" },
-    -- import GitUI (Need to install gitui)
-    { import = "lazyvim.plugins.extras.util.gitui" },
     -- import mini comment
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
     -- import/override with your plugins
