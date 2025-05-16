@@ -3,6 +3,19 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        -- Configure ruff
+        ruff = {
+          init_options = {
+            settings = {
+              lineLength = 120,
+              organizeImports = true,
+              fixAll = true,
+              lint = {
+                select = { "I", "E", "W", "F", "S" },
+              },
+            },
+          },
+        },
         -- Configure pylsp
         pylsp = {
           settings = {
@@ -19,7 +32,7 @@ return {
                 pylsp_isort = { enabled = false },
                 mccabe = { enabled = false },
                 -- Install pylsp_mypy using `:PylspInstall pylsp-mypy`
-                pylsp_mypy = { enabled = false },
+                pylsp_mypy = { enabled = true },
               },
             },
           },
