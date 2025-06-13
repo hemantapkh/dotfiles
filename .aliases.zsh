@@ -2,5 +2,5 @@ alias vim="nvim"
 alias nano="nvim"
 alias vi="nvim"
 alias docker="podman"
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias dotfiles="lazygit -g ~/.local/share/yadm/repo.git --work-tree=$HOME"
 alias ds="dotfiles"
