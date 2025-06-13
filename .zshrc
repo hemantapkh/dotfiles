@@ -21,6 +21,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export ZVM_VI_EDITOR=nvim
+export EDITOR="nvim"
+
+# ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
