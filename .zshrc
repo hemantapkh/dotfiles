@@ -14,6 +14,9 @@ find "$HOME" -maxdepth 1 -name "*.zsh" ! -name ".zsh_plugins.zsh" | while read -
     source "$file"
 done
 
+# Config directory
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
