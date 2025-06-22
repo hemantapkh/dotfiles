@@ -44,3 +44,16 @@ killport() {
     fi
 }
 
+# Zoxide + nvim
+
+v() {
+  local dir
+  if [[ -z "$1" ]]; then
+    # If no argument is provided, use interactive selection with fzf
+    dir=$(zoxide query -l | fzf --height 40% --layout reverse --prompt="Select directory: ") || return 1
+  else
+    # Use zoxide to resolve the directory based on the argument
+    dir=$(zoxide query --exclude "$(pwd)" -- "$1") || return 1
+  fi
+  cd "$dir" && nvim .
+}
