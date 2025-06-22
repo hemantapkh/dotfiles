@@ -1,0 +1,5 @@
+working-directory = /tmp
+theme = tokyonight_moon
+macos-option-as-alt = left
+keybind = cmd+t=unbind
+command = ~/.config/tmux/start.sh
