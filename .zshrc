@@ -5,6 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Config directory
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Antidote
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
@@ -14,20 +20,18 @@ find "$HOME" -maxdepth 1 -name "*.zsh" ! -name ".zsh_plugins.zsh" | while read -
     source "$file"
 done
 
-# Config directory
-export XDG_CONFIG_HOME="$HOME/.config"
-
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Zoxide
+eval "$(zoxide init zsh)"
 
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-export ZVM_VI_EDITOR=nvim
-export EDITOR="nvim"
-
 # ASDF
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# Variables
+export ZVM_VI_EDITOR="nvim"
+export EDITOR="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

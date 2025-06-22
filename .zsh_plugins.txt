@@ -1,12 +1,7 @@
-# OMZ plugins
-getantidote/use-omz
-ohmyzsh/ohmyzsh path:lib
-
 # Theme
 romkatv/powerlevel10k
 
 # Plugins
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
-zsh-users/zsh-autosuggestions
 jeffreytse/zsh-vi-mode
