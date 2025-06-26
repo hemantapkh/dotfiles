@@ -1,5 +1,5 @@
 working-directory = /tmp
-theme = tokyonight_moon
+theme = catppuccin-mocha.conf
 font-size = 12
 macos-option-as-alt = left
 keybind = cmd+t=unbind
