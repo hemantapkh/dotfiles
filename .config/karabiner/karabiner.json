@@ -1,4 +1,5 @@
 {
+    "global": { "show_in_menu_bar": false },
     "profiles": [
         {
             "complex_modifications": {
@@ -22,6 +23,14 @@
                     {
                         "description": "Hyper Key + App Prefix to Open Applications",
                         "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+                                },
+                                "to": [{ "shell_command": "open -a mail" }],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "s",
@@ -52,6 +61,14 @@
                                     "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a ghostty" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'youtube music'" }],
                                 "type": "basic"
                             }
                         ]
