@@ -57,3 +57,25 @@ v() {
   fi
   cd "$dir" && nvim .
 }
+
+# ghclone: Clone a GitHub repo using gh s
+
+ghclone() {
+  local repo_name="$1"
+  local owner="$2"
+
+  # Check if repo_name is provided
+  [ -z "$repo_name" ] && { echo "Error: Repo name required. Usage: ghclone <repo_name> [owner]"; return 1; }
+
+  # Run gh s to get the repo URL
+  local repo_url
+  if [ -n "$owner" ]; then
+    repo_url=$(gh s "$repo_name" -u "$owner")
+  else
+    repo_url=$(gh s "$repo_name")
+  fi
+
+  [ -z "$repo_url" ] && { echo "Error: No result found for '$repo_name'."; return 1; }
+ 
+  git clone $repo_url
+}
