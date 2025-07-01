@@ -8,6 +8,9 @@ fi
 # Config directory
 export XDG_CONFIG_HOME="$HOME/.config"
 
+autoload -Uz compinit
+compinit
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -25,9 +28,14 @@ eval "$(zoxide init zsh)"
 
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+source <(kubectl completion zsh)
 
 # ASDF
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 
 # Variables
 export ZVM_VI_EDITOR="nvim"
@@ -35,3 +43,6 @@ export EDITOR="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"
