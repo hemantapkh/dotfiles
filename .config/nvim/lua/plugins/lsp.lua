@@ -24,6 +24,7 @@ return {
                   -- Disabling reports handled by ruff
                   reportUnusedImport = "none",
                   reportUnusedVariable = "none",
+                  reportUndefinedVariable = "none",
                   reportMissingTypeStubs = "none",
                   reportAny = "warning",
                   reportGeneralTypeIssues = "warning",
