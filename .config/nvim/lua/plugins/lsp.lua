@@ -1,43 +1,54 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      { "williamboman/mason.nvim" },
+      { "williamboman/mason-lspconfig.nvim" },
+    },
     opts = {
       servers = {
-        -- Configure ruff
-        ruff = {
-          init_options = {
-            settings = {
-              lineLength = 120,
-              organizeImports = true,
-              fixAll = true,
-              lint = {
-                select = { "I", "E", "W", "F", "S" },
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                diagnosticMode = "workspace",
+                autoImportCompletions = true,
+                useTypingExtensions = true,
+                inlayHints = {
+                  functionReturnTypes = true,
+                  genericTypes = true,
+                  callArgumentNames = true,
+                  variableTypes = true,
+                },
+                diagnosticSeverityOverrides = {
+                  -- Disabling reports handled by ruff
+                  reportUnusedImport = "none",
+                  reportUnusedVariable = "none",
+                  reportMissingTypeStubs = "none",
+                  reportAny = "warning",
+                  reportGeneralTypeIssues = "warning",
+                },
               },
             },
           },
         },
-        -- Configure pylsp
-        pylsp = {
+        ruff = {
           settings = {
-            pylsp = {
-              plugins = {
-                -- Disable linting and formatting (handled by ruff)
-                pycodestyle = { enabled = false },
-                pyflakes = { enabled = false },
-                pylint = { enabled = false },
-                flake8 = { enabled = false },
-                autopep8 = { enabled = false },
-                yapf = { enabled = false },
-                pylsp_black = { enabled = false },
-                pylsp_isort = { enabled = false },
-                mccabe = { enabled = false },
-                -- Install pylsp_mypy using `:PylspInstall pylsp-mypy`
-                pylsp_mypy = { enabled = true },
-              },
+            lineLength = 120,
+            lint = {
+              select = { "I", "E", "W", "F", "S" },
             },
           },
         },
       },
+    },
+  },
+
+  -- Mason for installing pyright and ruff
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = { "basedpyright", "ruff" },
     },
   },
 }
