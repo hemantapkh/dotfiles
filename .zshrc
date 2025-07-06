@@ -30,6 +30,9 @@ eval "$(zoxide init zsh)"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 source <(kubectl completion zsh)
 
+# tf
+eval $(thefuck --alias)
+
 # ASDF
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
