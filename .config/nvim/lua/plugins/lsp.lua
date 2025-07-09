@@ -11,6 +11,7 @@ return {
           settings = {
             basedpyright = {
               analysis = {
+                typeCheckingMode = "basic",
                 diagnosticMode = "workspace",
                 autoImportCompletions = true,
                 useTypingExtensions = true,
@@ -26,7 +27,7 @@ return {
                   reportUnusedVariable = "none",
                   reportUndefinedVariable = "none",
                   reportMissingTypeStubs = "none",
-                  reportAny = "warning",
+                  reportAny = "none",
                   reportGeneralTypeIssues = "warning",
                 },
               },
