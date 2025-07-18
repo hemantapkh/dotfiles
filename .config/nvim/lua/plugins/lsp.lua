@@ -35,10 +35,12 @@ return {
           },
         },
         ruff = {
-          settings = {
-            lineLength = 120,
-            lint = {
-              select = { "I", "E", "W", "F", "S" },
+          init_options = {
+            settings = {
+              lineLength = 120,
+              lint = {
+                select = { "I", "E", "W", "F", "S" },
+              },
             },
           },
         },
