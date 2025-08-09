@@ -1,6 +1,6 @@
 working-directory = /tmp
 theme = catppuccin-mocha.conf
-font-size = 12
 macos-option-as-alt = left
 keybind = cmd+t=unbind
+window-decoration = false
 command = ~/.config/tmux/start.sh
