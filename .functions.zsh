@@ -1,5 +1,4 @@
 # loadenv: Load environment variables from a specified file (default: .env)
-
 loadenv() {
     local file="${1:-.env}"
 
@@ -14,7 +13,6 @@ loadenv() {
 }
 
 # killport: Kill the process running on the specified port
-
 killport() {
     local port=$1
     if [ -z "$port" ]; then
@@ -45,7 +43,6 @@ killport() {
 }
 
 # Zoxide + nvim
-
 v() {
   local dir
   if [[ -z "$1" ]]; then
@@ -79,3 +76,39 @@ ghclone() {
  
   git clone $repo_url
 }
+
+# atlasip: Whitelist an IP address in MongoDB Atlas
+atlasip() {
+    local use_specific_project=false
+    local ip_address hours_duration comment_text project_id
+
+    for arg in "$@"; do
+        case $arg in
+            --ip=*) ip_address="${arg#*=}" ;;
+            --hours=*) hours_duration="${arg#*=}" ;;
+            --comment=*) comment_text="${arg#*=}" ;;
+            --project=*) project_id="${arg#*=}"; use_specific_project=true ;;
+            --project) use_specific_project=true ;;
+        esac
+    done
+
+    ip_address="${ip_address:---currentIp}"
+    hours_duration="${hours_duration:-6}"
+    comment_text="${comment_text:-$(whoami)}"
+    expiry_date=$(date -u -v+"$hours_duration"H +%Y-%m-%dT%H:%M:%SZ)
+
+    if [ "$use_specific_project" = true ]; then
+        if [ -z "$project_id" ]; then
+            project_id=$(atlas projects list --output json | jq -r '.results[] | "\(.id) \(.name)"' | fzf --height 40% --reverse --with-nth=2.. | awk '{print $1}')
+            if [ -z "$project_id" ]; then
+              echo "No project selected. Aborting."
+              return 1
+            fi
+        fi
+        [ -n "$project_id" ] && project_flags="--projectId $project_id"
+    fi
+
+    cmd="atlas accessLists create \"$ip_address\" --type ipAddress $project_flags --comment \"$comment_text\" --deleteAfter \"$expiry_date\""
+    eval "$cmd"
+}
+
