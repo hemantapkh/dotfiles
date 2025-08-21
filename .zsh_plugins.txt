@@ -1,3 +1,12 @@
+# Handle OMZ dependencies
+getantidote/use-omz
+ohmyzsh/ohmyzsh path:lib
+
+# Load OMZ plugins
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/gcloud
+
 # Theme
 romkatv/powerlevel10k
 
