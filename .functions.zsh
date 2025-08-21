@@ -43,7 +43,7 @@ killport() {
 }
 
 # Zoxide + nvim
-v() {
+n() {
   local dir
   if [[ -z "$1" ]]; then
     # If no argument is provided, use interactive selection with fzf
