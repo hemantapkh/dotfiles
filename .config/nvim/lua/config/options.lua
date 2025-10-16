@@ -3,7 +3,6 @@
 -- Add any additional options here
 
 vim.g.lazyvim_python_lsp = "ruff"
-vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.lazyvim_python_ruff = "ruff"
 
 -- Auto fix Python imports and apply ruff fixes on save
