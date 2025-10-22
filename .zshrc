@@ -39,7 +39,6 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-
 # Variables
 export ZVM_VI_EDITOR="nvim"
 export EDITOR="nvim"
