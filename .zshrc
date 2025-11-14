@@ -26,6 +26,9 @@ done
 # Zoxide
 eval "$(zoxide init zsh)"
 
+# Go Path
+export PATH="$HOME/go/bin:$PATH"
+
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 source <(kubectl completion zsh)
