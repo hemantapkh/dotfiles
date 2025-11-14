@@ -5,7 +5,8 @@ alias a="atuin"
 alias y="yazi"
 alias dotfiles="lazygit -g ~/.local/share/yadm/repo.git --work-tree=$HOME"
 alias ds="dotfiles"
-alias lg="lazygit"
+alias zg="lazygit"
+alias zd="lazydocker"
 alias ls="eza --icons=always"
 
 # Kubectl
