@@ -11,6 +11,8 @@ alias ls="eza --icons=always"
 # Kubectl
 alias kubens="kubectl ns"
 alias kubectx="kubectl ctx"
+alias kns="kubectl ns"
+alias kcx="kubectl ctx"
 
 # Gcloud
 alias gcal="gcloud auth login"
