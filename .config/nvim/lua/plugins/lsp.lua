@@ -6,6 +6,7 @@ return {
       { "mason-org/mason-lspconfig.nvim" },
     },
     opts = {
+      inlay_hints = { enabled = false },
       servers = {
         ruff = {
           init_options = {
