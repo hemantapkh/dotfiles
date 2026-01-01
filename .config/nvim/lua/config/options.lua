@@ -4,11 +4,3 @@
 
 vim.g.lazyvim_python_lsp = "ruff"
 vim.g.lazyvim_python_ruff = "ruff"
-
--- Ty issue workaround: Restart LSP on save to re-analyze files
-vim.api.nvim_create_autocmd("BufWritePost", {
-  pattern = "*.py",
-  callback = function()
-    vim.cmd("LspRestart")
-  end,
-})
