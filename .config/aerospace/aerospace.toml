@@ -233,5 +233,28 @@ if.app-id = 'com.github.th-ch.youtube-music'
 run = "move-node-to-workspace M"
 
 [[on-window-detected]]
-if.app-id = 'bitwarden'
+if.app-id = 'com.bitwarden.desktop'
 run = "move-node-to-workspace B"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Photos'
+run = "move-node-to-workspace P"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = "move-node-to-workspace F"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.FaceTime'
+run = "move-node-to-workspace V"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace E"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = "move-node-to-workspace C"
+
+
+
