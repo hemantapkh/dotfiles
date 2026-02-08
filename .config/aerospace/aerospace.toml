@@ -257,4 +257,7 @@ if.app-id = 'com.apple.MobileSMS'
 run = "move-node-to-workspace C"
 
 
+[[on-window-detected]]
+if.app-id = 'com.firecore.infuse'
+run = "move-node-to-workspace I"
 
