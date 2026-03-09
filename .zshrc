@@ -13,6 +13,7 @@ compinit
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Antidote
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
@@ -33,6 +34,11 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 source <(kubectl completion zsh)
 
+# Postgres
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@18/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@18/include"
+
 # tf
 eval $(thefuck --alias)
 
@@ -51,3 +57,7 @@ export EDITOR="nvim"
 
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
