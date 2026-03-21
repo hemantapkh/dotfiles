@@ -1,0 +1,247 @@
+{
+  "profiles" : [
+    {
+      "id" : "D4E4718A-A4EF-441E-A6ED-5FBDE16EAF69",
+      "name" : "Default",
+      "workspaces" : [
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.mitchellh.ghostty",
+              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/Ghostty.icns",
+              "name" : "Ghostty"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+g",
+          "display" : "Built-in Retina Display",
+          "id" : "DDAB3866-8D38-429B-A196-D87593D4977B",
+          "name" : "Ghostty",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+g",
+          "symbolIconName" : "apple.terminal"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "app.zen-browser.zen",
+              "iconPath" : "/Applications/Zen.app/Contents/Resources/firefox.icns",
+              "name" : "Zen"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+z",
+          "display" : "Built-in Retina Display",
+          "id" : "D03F76F3-604C-4644-99F8-9799860F87CF",
+          "name" : "Zen",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+z",
+          "symbolIconName" : "globe"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.TablePro",
+              "iconPath" : "/Applications/TablePro.app/Contents/Resources/AppIcon.icns",
+              "name" : "TablePro"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+t",
+          "display" : "Built-in Retina Display",
+          "id" : "A045CF25-72FF-4ADB-858F-07690C43B22D",
+          "name" : "Table Pro",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+t",
+          "symbolIconName" : "swiftdata"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.hnc.Discord",
+              "iconPath" : "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericApplicationIcon.icns",
+              "name" : "Discord"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+d",
+          "display" : "Built-in Retina Display",
+          "id" : "BEB7C781-5276-469A-AE71-00EF8A2345A8",
+          "name" : "Discord",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+d",
+          "symbolIconName" : "gamecontroller"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.tinyspeck.slackmacgap",
+              "iconPath" : "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericApplicationIcon.icns",
+              "name" : "Slack"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+s",
+          "display" : "Built-in Retina Display",
+          "id" : "C1FAFFBC-1774-42B7-856A-2073FE763089",
+          "name" : "Slack",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+s",
+          "symbolIconName" : "bubble.left.and.bubble.right"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "md.obsidian",
+              "iconPath" : "/Applications/Obsidian.app/Contents/Resources/icon.icns",
+              "name" : "Obsidian"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+o",
+          "display" : "Built-in Retina Display",
+          "id" : "3B1A06CB-6AA5-4F4E-8585-CB4EF608093A",
+          "name" : "Obsidian",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+o",
+          "symbolIconName" : "note.text"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.github.th-ch.youtube-music",
+              "iconPath" : "/Applications/YouTube Music.app/Contents/Resources/icon.icns",
+              "name" : "YouTube Music"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+m",
+          "display" : "Built-in Retina Display",
+          "id" : "DE114D5B-E831-4D63-A4B9-E3EC4DB5EAA9",
+          "name" : "YouTube Music",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+m",
+          "symbolIconName" : "music.note"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.bitwarden.desktop",
+              "iconPath" : "/Applications/Bitwarden.app/Contents/Resources/icon.icns",
+              "name" : "Bitwarden"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+b",
+          "display" : "Built-in Retina Display",
+          "id" : "40B492BB-224C-45AB-BED0-B7CBAD80D3D6",
+          "name" : "Bitwarden",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+b",
+          "symbolIconName" : "lock.shield"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.apple.Photos",
+              "iconPath" : "/System/Applications/Photos.app/Contents/Resources/AppIcon.icns",
+              "name" : "Photos"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+p",
+          "display" : "Built-in Retina Display",
+          "id" : "ABA3AA10-43B3-4380-97A8-20A0C8389FF1",
+          "name" : "Photos",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+p",
+          "symbolIconName" : "photo"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.apple.finder",
+              "iconPath" : "/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns",
+              "name" : "Finder"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+f",
+          "display" : "Built-in Retina Display",
+          "id" : "4298EA27-D67F-43AC-AC30-43AF35D99C67",
+          "name" : "Finder",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+f",
+          "symbolIconName" : "folder"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.apple.FaceTime",
+              "iconPath" : "/System/Applications/FaceTime.app/Contents/Resources/AppIcon.icns",
+              "name" : "FaceTime"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+v",
+          "display" : "Built-in Retina Display",
+          "id" : "3D6DC30B-60CB-4C64-AB17-2C1A714E1B5B",
+          "name" : "FaceTime",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+v",
+          "symbolIconName" : "video"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.apple.mail",
+              "iconPath" : "/System/Applications/Mail.app/Contents/Resources/ApplicationIcon.icns",
+              "name" : "Mail"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+e",
+          "display" : "Built-in Retina Display",
+          "id" : "35487764-973D-454D-A21A-533A13A3AAFF",
+          "name" : "Mail",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+e",
+          "symbolIconName" : "envelope"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.apple.MobileSMS",
+              "iconPath" : "/System/Applications/Messages.app/Contents/Resources/AppIcon.icns",
+              "name" : "Messages"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+c",
+          "display" : "Built-in Retina Display",
+          "id" : "A8E27A27-B3E1-4514-9A63-54AA67D1E797",
+          "name" : "Messages",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+c",
+          "symbolIconName" : "message"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "com.firecore.infuse",
+              "iconPath" : "/Applications/Infuse.app/Contents/Resources/AppIconMac.icns",
+              "name" : "Infuse"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+i",
+          "display" : "Built-in Retina Display",
+          "id" : "AE3C8BEA-C962-48ED-BD2B-AD16B8D0C2FB",
+          "name" : "Infuse",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+i",
+          "symbolIconName" : "play.rectangle"
+        }
+      ]
+    }
+  ]
+}
