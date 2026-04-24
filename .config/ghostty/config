@@ -1,5 +1,3 @@
 working-directory = /tmp
 theme = catppuccin-mocha.conf
 macos-option-as-alt = left
-keybind = cmd+t=unbind
-command = ~/.config/tmux/start.sh
