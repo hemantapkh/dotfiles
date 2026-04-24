@@ -7,6 +7,7 @@ fi
 
 # Config directory
 export XDG_CONFIG_HOME="$HOME/.config"
+export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
 
 autoload -Uz compinit
 compinit
