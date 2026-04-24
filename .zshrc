@@ -7,7 +7,9 @@ fi
 
 # Config directory
 export XDG_CONFIG_HOME="$HOME/.config"
-export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
+export XDG_DATA_HOME=~/.local/share
+export XDG_STATE_HOME=~/.local/state
+export XDG_CACHE_HOME=~/.cache
 
 autoload -Uz compinit
 compinit
@@ -52,6 +54,7 @@ source <(fzf --zsh)
 # Variables
 export ZVM_VI_EDITOR="nvim"
 export EDITOR="nvim"
+export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
