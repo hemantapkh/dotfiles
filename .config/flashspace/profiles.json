@@ -55,22 +55,6 @@
         {
           "apps" : [
             {
-              "bundleIdentifier" : "com.hnc.Discord",
-              "iconPath" : "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericApplicationIcon.icns",
-              "name" : "Discord"
-            }
-          ],
-          "assignAppShortcut" : "opt+shift+d",
-          "display" : "Built-in Retina Display",
-          "id" : "BEB7C781-5276-469A-AE71-00EF8A2345A8",
-          "name" : "Discord",
-          "openAppsOnActivation" : false,
-          "shortcut" : "opt+d",
-          "symbolIconName" : "gamecontroller"
-        },
-        {
-          "apps" : [
-            {
               "bundleIdentifier" : "com.tinyspeck.slackmacgap",
               "iconPath" : "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericApplicationIcon.icns",
               "name" : "Slack"
@@ -227,6 +211,22 @@
           "openAppsOnActivation" : false,
           "shortcut" : "opt+i",
           "symbolIconName" : "play.rectangle"
+        },
+        {
+          "apps" : [
+            {
+              "autoOpen" : true,
+              "bundleIdentifier" : "dev.kdrag0n.MacVirt",
+              "iconPath" : "/Applications/OrbStack.app/Contents/Resources/AppIcon.icns",
+              "name" : "OrbStack"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+d",
+          "display" : "Built-in Retina Display",
+          "id" : "80776FAA-8CAC-4A0D-93A6-35D6A1D60330",
+          "name" : "Orb Stack",
+          "openAppsOnActivation" : true,
+          "shortcut" : "opt+d"
         }
       ]
     }
