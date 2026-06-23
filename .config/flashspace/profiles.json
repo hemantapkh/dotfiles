@@ -6,11 +6,7 @@
       "workspaces" : [
         {
           "apps" : [
-            {
-              "bundleIdentifier" : "com.mitchellh.ghostty",
-              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/Ghostty.icns",
-              "name" : "Ghostty"
-            }
+
           ],
           "assignAppShortcut" : "opt+shift+g",
           "display" : "Built-in Retina Display",
@@ -22,6 +18,11 @@
         },
         {
           "apps" : [
+            {
+              "bundleIdentifier" : "com.google.antigravity",
+              "iconPath" : "/Applications/Antigravity.app/Contents/Resources/Antigravity.icns",
+              "name" : "Antigravity"
+            },
             {
               "bundleIdentifier" : "app.zen-browser.zen",
               "iconPath" : "/Applications/Zen.app/Contents/Resources/firefox.icns",
@@ -63,10 +64,10 @@
           "assignAppShortcut" : "opt+shift+s",
           "display" : "Built-in Retina Display",
           "id" : "C1FAFFBC-1774-42B7-856A-2073FE763089",
-          "name" : "Slack",
+          "name" : "Work",
           "openAppsOnActivation" : false,
           "shortcut" : "opt+s",
-          "symbolIconName" : "bubble.left.and.bubble.right"
+          "symbolIconName" : "building.2.fill"
         },
         {
           "apps" : [
@@ -215,7 +216,6 @@
         {
           "apps" : [
             {
-              "autoOpen" : true,
               "bundleIdentifier" : "dev.kdrag0n.MacVirt",
               "iconPath" : "/Applications/OrbStack.app/Contents/Resources/AppIcon.icns",
               "name" : "OrbStack"
@@ -225,8 +225,23 @@
           "display" : "Built-in Retina Display",
           "id" : "80776FAA-8CAC-4A0D-93A6-35D6A1D60330",
           "name" : "Orb Stack",
-          "openAppsOnActivation" : true,
+          "openAppsOnActivation" : false,
           "shortcut" : "opt+d"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.google.antigravity",
+              "iconPath" : "/Applications/Antigravity.app/Contents/Resources/icon.icns",
+              "name" : "Antigravity"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+a",
+          "display" : "Built-in Retina Display",
+          "id" : "89C61381-A0B2-46C2-A067-DE9B64321506",
+          "name" : "Antigravity",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+a"
         }
       ]
     }
