@@ -1,3 +1,4 @@
 working-directory = /tmp
 theme = catppuccin-mocha.conf
 macos-option-as-alt = left
+term = xterm-256color
