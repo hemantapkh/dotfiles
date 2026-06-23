@@ -8,7 +8,7 @@ alias ds="dotfiles"
 alias lzg="lazygit"
 alias lzd="lazydocker"
 alias ls="eza --icons=always"
-alias brewsync='brew bundle dump --force --cleanup'
+alias brewsync='brew bundle dump --force'
 
 # Kubectl
 alias kns="kubectl ns"
