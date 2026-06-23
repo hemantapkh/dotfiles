@@ -1,50 +1,111 @@
-tap "derailed/k9s"
-tap "lihaoyun6/tap"
-tap "pear-devs/pear"
-tap "valkyrie00/bbrew"
+tap "derailed/k9s", trusted: true
+tap "lihaoyun6/tap", trusted: true
+tap "oven-sh/bun", trusted: true
+tap "pear-devs/pear", trusted: true
+tap "sw33tlie/macshot", trusted: true
+tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted: true
+# Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
-brew "node"
-brew "bitwarden-cli"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream many audio and video codecs
 brew "ffmpeg-full", link: true
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# Command-line interface for SQLite
+brew "sqlite"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Interact with Google Gemini AI models from the command-line
 brew "gemini-cli"
+# GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Tools and libraries to manipulate images in many formats
 brew "imagemagick-full", link: true
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# Lazier way to manage everything docker
 brew "lazydocker"
+# Simple terminal UI for git commands
 brew "lazygit"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Manage multiple Node.js versions
 brew "nvm"
+# Fast, disk space efficient package manager
 brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-brew "resvg"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-brew "sevenzip"
+# Programmatically correct mistyped console commands
 brew "thefuck"
+# Markup-based typesetting system
+brew "typst"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Yet Another Dotfiles Manager
 brew "yadm"
+# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
+# Modern TUI for managing Homebrew packages and casks on macOS and Linux
 brew "valkyrie00/bbrew/bbrew"
-cask "lihaoyun6/tap/airbattery"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
+# Desktop password and login vault
+cask "bitwarden"
+# OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Voice and text chat software
+cask "discord"
+# Virtual workspace manager
 cask "flashspace"
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Web browser
+cask "google-chrome"
+# Keyboard customiser
 cask "karabiner-elements"
+# Native macOS screenshot tool inspired by Flameshot
+cask "sw33tlie/macshot/macshot"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Replacement for Docker Desktop
 cask "orbstack"
+# Pear Desktop App
 cask "pear-devs/pear/pear-desktop"
+# Utility to uninstall apps and remove leftover files from old/uninstalled apps
 cask "pearcleaner"
+# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-cask "shottr"
+# Native database client for many database types
 cask "tablepro"
+# Open-source BitTorrent client
+cask "transmission"
+# Multimedia player
+cask "vlc"
+# Gecko based web browser
 cask "zen"
 uv "pre-commit"
+uv "prek"
+uv "ty"
+uv "uv-upx"
+npm "web-ext"
