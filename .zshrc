@@ -19,7 +19,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/bin:$PATH"
 
 # Antidote
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
 
 # Load all .zsh files in the home directory except for .zsh_plugins.zsh
@@ -55,13 +55,13 @@ source <(fzf --zsh)
 export ZVM_VI_EDITOR="nvim"
 export EDITOR="nvim"
 export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
+export SSH_AUTH_SOCK=/Users/$USER/.bitwarden-ssh-agent.sock
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-. "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh)"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(atuin init zsh)"
