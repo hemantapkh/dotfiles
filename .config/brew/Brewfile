@@ -6,6 +6,8 @@ tap "sw33tlie/macshot", trusted: true
 tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted: true
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Modern, maintained replacement for ls
@@ -16,12 +18,6 @@ brew "fd"
 brew "ffmpeg-full", link: true
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Command-line interface for SQLite
-brew "sqlite"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Syntax-highlighting pager for git and diff output
@@ -40,6 +36,10 @@ brew "lazydocker"
 brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Command-line interface for SQLite
+brew "sqlite"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
 # Fast, disk space efficient package manager
@@ -48,6 +48,8 @@ brew "pnpm"
 brew "poppler"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Markup-based typesetting system
@@ -61,15 +63,19 @@ brew "yazi"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
-brew "derailed/k9s/k9s"
+brew "derailed/k9s/k9s", trusted: true
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
-brew "oven-sh/bun/bun"
+brew "oven-sh/bun/bun", trusted: true
 # Modern TUI for managing Homebrew packages and casks on macOS and Linux
-brew "valkyrie00/bbrew/bbrew"
+brew "valkyrie00/bbrew/bbrew", trusted: true
 # Terminal interface for Antigravity agents
 cask "antigravity-cli"
 # Desktop password and login vault
 cask "bitwarden"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Voice and text chat software
@@ -85,19 +91,21 @@ cask "google-chrome"
 # Keyboard customiser
 cask "karabiner-elements"
 # Native macOS screenshot tool inspired by Flameshot
-cask "sw33tlie/macshot/macshot"
+cask "sw33tlie/macshot/macshot", trusted: true
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Pear Desktop App
-cask "pear-devs/pear/pear-desktop"
+cask "pear-devs/pear/pear-desktop", trusted: true
 # Utility to uninstall apps and remove leftover files from old/uninstalled apps
 cask "pearcleaner"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Native database client for many database types
 cask "tablepro"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
 # Open-source BitTorrent client
 cask "transmission"
 # Multimedia player
