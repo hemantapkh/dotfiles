@@ -12,15 +12,14 @@ system_type=$(uname -s)
 
 if [ "$system_type" = "Darwin" ]; then
 
-  # install homebrew if it's missing
-  if ! command -v brew >/dev/null 2>&1; then
-    echo "Installing homebrew"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  fi
-
-  if [ -f "$XDG_CONFIG_HOME/Brewfile" ]; then
-    echo "Updating homebrew bundle"
-    brew bundle --global
+  # Install applications from the Brewfile
+  brewfile="$HOME/.config/brew/Brewfile"
+  if [ -f "$brewfile" ]; then
+    echo "Installing applications from Brewfile..."
+    brew bundle --file="$brewfile"
+  else
+    echo "Brewfile not found at $brewfile"
   fi
 
 fi
+
