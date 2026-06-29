@@ -6,7 +6,11 @@
       "workspaces" : [
         {
           "apps" : [
-
+            {
+              "bundleIdentifier" : "com.mitchellh.ghostty",
+              "iconPath" : "/Applications/Ghostty.app/Contents/Resources/Ghostty.icns",
+              "name" : "Ghostty"
+            }
           ],
           "assignAppShortcut" : "opt+shift+g",
           "display" : "Built-in Retina Display",
@@ -18,11 +22,6 @@
         },
         {
           "apps" : [
-            {
-              "bundleIdentifier" : "com.google.antigravity",
-              "iconPath" : "/Applications/Antigravity.app/Contents/Resources/Antigravity.icns",
-              "name" : "Antigravity"
-            },
             {
               "bundleIdentifier" : "app.zen-browser.zen",
               "iconPath" : "/Applications/Zen.app/Contents/Resources/firefox.icns",
