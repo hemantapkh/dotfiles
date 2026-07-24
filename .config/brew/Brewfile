@@ -8,8 +8,12 @@ tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted:
 brew "antidote"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Tools to work with Android .dex and Java .class files
+brew "dex2jar"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
@@ -24,10 +28,10 @@ brew "gh"
 brew "git-delta"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick-full", link: true
+# Dex to Java decompiler
+brew "jadx"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Handy way to save and run project-specific commands
-brew "just"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Lazier way to manage everything docker
@@ -68,6 +72,8 @@ brew "derailed/k9s/k9s", trusted: true
 brew "oven-sh/bun/bun", trusted: true
 # Modern TUI for managing Homebrew packages and casks on macOS and Linux
 brew "valkyrie00/bbrew/bbrew", trusted: true
+# Tools for building Android applications
+cask "android-studio"
 # Terminal interface for Antigravity agents
 cask "antigravity-cli"
 # Desktop password and login vault
@@ -90,8 +96,12 @@ cask "ghostty"
 cask "google-chrome"
 # Keyboard customiser
 cask "karabiner-elements"
+# Clipboard manager
+cask "maccy"
 # Native macOS screenshot tool inspired by Flameshot
 cask "sw33tlie/macshot/macshot", trusted: true
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Replacement for Docker Desktop
@@ -112,6 +122,9 @@ cask "transmission"
 cask "vlc"
 # Gecko based web browser
 cask "zen"
+uv "frida-tools"
+uv "hermes-dec"
+uv "objection"
 uv "pre-commit"
 uv "prek"
 uv "ty"
