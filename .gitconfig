@@ -11,3 +11,5 @@
 
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
+[pull]
+	rebase = true
