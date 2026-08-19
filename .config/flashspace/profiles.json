@@ -70,11 +70,7 @@
         },
         {
           "apps" : [
-            {
-              "bundleIdentifier" : "md.obsidian",
-              "iconPath" : "/Applications/Obsidian.app/Contents/Resources/icon.icns",
-              "name" : "Obsidian"
-            }
+
           ],
           "assignAppShortcut" : "opt+shift+o",
           "display" : "Built-in Retina Display",
@@ -122,6 +118,11 @@
               "bundleIdentifier" : "com.apple.Photos",
               "iconPath" : "/System/Applications/Photos.app/Contents/Resources/AppIcon.icns",
               "name" : "Photos"
+            },
+            {
+              "bundleIdentifier" : "md.obsidian",
+              "iconPath" : "/Applications/Obsidian.app/Contents/Resources/icon.icns",
+              "name" : "Obsidian"
             }
           ],
           "assignAppShortcut" : "opt+shift+p",
@@ -241,6 +242,26 @@
           "name" : "Antigravity",
           "openAppsOnActivation" : false,
           "shortcut" : "opt+a"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.canva.affinity",
+              "iconPath" : "/Applications/Affinity.app/Contents/Resources/AppIcon.icns",
+              "name" : "Affinity"
+            },
+            {
+              "bundleIdentifier" : "com.apple.dt.Xcode",
+              "iconPath" : "/Applications/Xcode.app/Contents/Resources/Xcode.icns",
+              "name" : "Xcode"
+            }
+          ],
+          "assignAppShortcut" : "opt+shift+-",
+          "display" : "Built-in Retina Display",
+          "id" : "8237F4A8-F1CD-44D0-8246-3BB54328137B",
+          "name" : "Desktop",
+          "openAppsOnActivation" : false,
+          "shortcut" : "opt+-"
         }
       ]
     }
