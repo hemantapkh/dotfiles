@@ -60,6 +60,7 @@ export ZVM_VI_EDITOR="nvim"
 export EDITOR="nvim"
 export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME/brew/Brewfile"
 export SSH_AUTH_SOCK=/Users/$USER/.bitwarden-ssh-agent.sock
+export HOMEBREW_AUTO_UPDATE_SECS="3600"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
