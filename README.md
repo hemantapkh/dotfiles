@@ -4,7 +4,16 @@ My personal macOS configuration files.
 
 ## 🚀 Installation & Setup
 
-To set up these dotfiles on a fresh macOS machine, follow these steps:
+On a fresh macOS machine, run:
+```bash
+curl -fsSL https://dots.hemantapkh.com | bash
+```
+
+This installs the dotfiles and everything they need. It never overwrites existing files and is safe to re-run. See [`.install.sh`](.install.sh) for options.
+
+### Manual setup
+
+To set up by hand instead, follow these steps:
 
 ### 1. Install Homebrew
 If you don't have Homebrew installed yet, run:
