@@ -1,11 +1,21 @@
 tap "derailed/k9s", trusted: true
+tap "infisical/get-cli"
+tap "jurplel/tap", trusted: { casks: ["instant-space-switcher"] }
 tap "lihaoyun6/tap", trusted: true
 tap "oven-sh/bun", trusted: true
 tap "pear-devs/pear", trusted: true
+tap "surajmazar/tap", "https://github.com/SurajMazar/homebrew-tap"
 tap "sw33tlie/macshot", trusted: true
 tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted: true
+tap "xykong/tap"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
+# Tool for reverse engineering 3rd party, closed, binary Android apps
+brew "apktool"
+# Command-line interface for SQLite
+brew "sqlite"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -14,6 +24,8 @@ brew "bash"
 brew "btop"
 # Tools to work with Android .dex and Java .class files
 brew "dex2jar"
+# Command-line tool for DigitalOcean
+brew "doctl"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
@@ -40,12 +52,16 @@ brew "lazydocker"
 brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Command-line interface for SQLite
-brew "sqlite"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# AI-powered code review tool with deterministic pipelines and an LLM agent
+brew "open-code-review"
+# Library for weighted finite-state transducers
+brew "openfst"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -60,14 +76,22 @@ brew "thefuck"
 brew "typst"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Java decompiler
+brew "vineflower"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
 # Yet Another Dotfiles Manager
 brew "yadm"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s", trusted: true
+# The official Infisical CLI
+brew "infisical/get-cli/infisical", trusted: true
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun", trusted: true
 # Modern TUI for managing Homebrew packages and casks on macOS and Linux
@@ -81,13 +105,15 @@ cask "bitwarden"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Voice and text chat software
 cask "discord"
 # Virtual workspace manager
 cask "flashspace"
+# Markdown previews in Finder QuickLook with diagrams and math
+cask "xykong/tap/flux-markdown", trusted: true
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -106,27 +132,39 @@ cask "mitmproxy"
 cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
+# LLM server built on MLX
+cask "osaurus"
 # Pear Desktop App
 cask "pear-devs/pear/pear-desktop", trusted: true
 # Utility to uninstall apps and remove leftover files from old/uninstalled apps
 cask "pearcleaner"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# System monitor for the menu bar
+cask "stats"
 # Native database client for many database types
 cask "tablepro"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Open-source BitTorrent client
 cask "transmission"
+# One CLI for GitHub, GitLab, Bitbucket and other Git forges
+cask "surajmazar/tap/trove", trusted: true
 # Multimedia player
 cask "vlc"
+# Menu bar toolkit with keep-awake, system monitor and volume mixer
+cask "vorssaint"
 # Gecko based web browser
 cask "zen"
+cargo "maturin"
 uv "frida-tools"
+uv "graphifyy"
 uv "hermes-dec"
 uv "objection"
 uv "pre-commit"
 uv "prek"
 uv "ty"
 uv "uv-upx"
+npm "omniroute"
+npm "typescript"
 npm "web-ext"
